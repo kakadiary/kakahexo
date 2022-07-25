@@ -2525,13 +2525,14 @@ ul.breadcrumb li:last-child {
   background: url("/images/avatar.gif");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 80%;
+  background-size: 90%;
   width: 12%;
-  height: 150px;
+  height: 160px;
 }
 @media (max-width: 767px) {
   .brand {
-    height: 90px;
+    height: 100px;
+    padding: 0 40px;
   }
 }
 .header-inner {
@@ -2644,7 +2645,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #17a4ff;
+  background: #beffff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
