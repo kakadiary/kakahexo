@@ -1173,8 +1173,8 @@ header.header {
   margin: 0;
 }
 .site-subtitle {
-  color: #444;
-  font: 1.25em bold;
+  color: var(--text-color);
+  font-size: 1.25em;
   margin: 10px 0;
 }
 .use-motion .site-title,
@@ -2656,7 +2656,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ffffd6;
+  background: #03ff2b;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
