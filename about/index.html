@@ -46,7 +46,7 @@
 
 
 
-<link rel="dns-prefetch" href="waline-six-rose.vercel.app">
+
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -130,7 +130,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -142,9 +142,6 @@
       </span>
       <span class="links-of-author-item">
         <a href="https://space.bilibili.com/310343153" title="bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;310343153" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>bilibili</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://www.ixigua.com/home/6685016123" title="头条 → https:&#x2F;&#x2F;www.ixigua.com&#x2F;home&#x2F;6685016123" rel="noopener" target="_blank"><i class="fab fa-jinritoutiao fa-fw"></i>头条</a>
       </span>
   </div>
 
@@ -210,7 +207,6 @@
     
 
 
-    <div class="comments" id="waline"></div>
 </div>
   </main>
 
@@ -264,17 +260,6 @@
 
 
 
-<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline-six-rose.vercel.app","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"dark":"auto","placeholder":12321421,"avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":"flase","requiredMeta":["nick","mail"],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","el":"#waline","comment":true,"path":"/about/"}</script>
-<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
-<script>
-document.addEventListener('page:loaded', () => {
-  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
-    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
-  ).then(() => 
-    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
-  );
-});
-</script>
 
 </body>
 </html>
