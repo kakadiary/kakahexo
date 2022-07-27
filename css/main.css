@@ -2657,7 +2657,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ffffd7;
+  background: #140bbb;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2676,4 +2676,11 @@ ul.breadcrumb li:last-child {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.fa-jinritoutiao {
+  background: url("/image/jinritoutiao.svg");
+  background-position: 50% 75%;
+  background-repeat: no-repeat;
+  height: 1rem;
+  width: 1rem;
 }
