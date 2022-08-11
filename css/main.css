@@ -1120,12 +1120,12 @@ header.header {
 }
 @media (min-width: 1200px) {
   .header-inner {
-    width: 700px;
+    width: 650px;
   }
 }
 @media (min-width: 1600px) {
   .header-inner {
-    width: 750px;
+    width: 700px;
   }
 }
 .site-brand-container {
@@ -1561,12 +1561,12 @@ header.header {
 }
 @media (min-width: 1200px) {
   .footer-inner {
-    width: 700px;
+    width: 650px;
   }
 }
 @media (min-width: 1600px) {
   .footer-inner {
-    width: 750px;
+    width: 700px;
   }
 }
 .use-motion .footer {
@@ -1995,7 +1995,7 @@ header.header {
 }
 .posts-expand .post-title {
   font-size: 1.75em;
-  font-weight: normal;
+  font-weight: 700;
   margin: initial;
   overflow-wrap: break-word;
 }
@@ -2488,12 +2488,12 @@ ul.breadcrumb li:last-child {
 }
 @media (min-width: 1200px) {
   .main-inner {
-    width: 700px;
+    width: 650px;
   }
 }
 @media (min-width: 1600px) {
   .main-inner {
-    width: 750px;
+    width: 700px;
   }
 }
 @media (max-width: 767px) {
@@ -2652,7 +2652,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #b56e79;
+  background: #9850ff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
