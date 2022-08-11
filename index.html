@@ -19,14 +19,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":"dark","version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":"dark","version":"8.12.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="分享热爱">
+    <meta name="description" content=". 分 享 热 爱 .">
 <meta property="og:type" content="website">
 <meta property="og:title">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="分享热爱">
+<meta property="og:description" content=". 分 享 热 爱 .">
 <meta property="og:locale">
 <meta property="article:author" content="19ta">
 <meta name="twitter:card" content="summary">
@@ -49,6 +49,25 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
+
+  <script>
+  fetch('https://v1.hitokoto.cn?c=b&c=d&c=i&c=k&c=j')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('hitokoto_text')
+      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+      hitokoto.innerText = data.hitokoto
+
+      const from = document.getElementById('hitokoto_from')
+      from.href = 'https://hitokoto.cn/?uuid=' + data.uuid 
+      from.innerText = data.from
+
+      const who = document.getElementById('hitokoto_who')
+      who.href = 'https://hitokoto.cn/?uuid=' + data.uuid 
+      who.innerText = data.from_who
+    })
+    .catch(console.error)
+</script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
@@ -91,6 +110,7 @@
 
 
 
+
 </div>
         
   
@@ -123,7 +143,7 @@
     <img class="site-author-image" itemprop="image" alt="19ta"
       src="/images/avatar.gif">
   <p class="site-author-name" itemprop="name">19ta</p>
-  <div class="site-description" itemprop="description">分享热爱</div>
+  <div class="site-description" itemprop="description">. 分 享 热 爱 .</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
@@ -205,7 +225,7 @@
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="">
-      <meta itemprop="description" content="分享热爱">
+      <meta itemprop="description" content=". 分 享 热 爱 .">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
@@ -214,7 +234,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/08/08/tp-xdr6088-1022/" class="post-title-link" itemprop="url">普联XDR6088 新固件复测（固件版本1.0.22）</a>
+          <a href="/2022/08/08/tp-xdr6088-1022/" class="post-title-link" itemprop="url"><b>普联XDR6088 新固件复测（固件版本1.0.22）</b></a>
         </h2>
 
         <div class="post-meta-container">
@@ -307,7 +327,7 @@
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="">
-      <meta itemprop="description" content="分享热爱">
+      <meta itemprop="description" content=". 分 享 热 爱 .">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
@@ -316,7 +336,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/07/27/redmi-ax6000-1-0-60/" class="post-title-link" itemprop="url">红米AX6000的1.0.60版固件解决问题了吗？</a>
+          <a href="/2022/07/27/redmi-ax6000-1-0-60/" class="post-title-link" itemprop="url"><b>红米AX6000的1.0.60版固件解决问题了吗？</b></a>
         </h2>
 
         <div class="post-meta-container">
@@ -366,7 +386,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <p><img src="https://cdn.19ta.cn/redmi-ax6000-1.0.60/titlepage720p.jpg"></p>
-<h2 id="1-0-48版固件的问题"><a href="#1-0-48版固件的问题" class="headerlink" title="1.0.48版固件的问题"></a>1.0.48版固件的问题</h2><p>在<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wv4y1w74C/" style="color:#0096ff;"> <em>《别急着入手！红米AX6000详尽对比评测》</em></a> 的评测视频中，使用1.0.48版固件的红米AX6000与iPhone配合测试时，<b style="color:#F6358A">出现无线速率表现较差、无缝漫游掉线的情况，与高通平台的小米11配合测试时，平均延时较高。</b>新版固件解决了这些问题吗？😰😰😰</p>
+<h2 id="1-0-48版固件的问题"><a href="#1-0-48版固件的问题" class="headerlink" title="1.0.48版固件的问题"></a>1.0.48版固件的问题</h2><p>在<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wv4y1w74C/"> <em>《别急着入手！红米AX6000详尽对比评测》</em></a> 的评测视频中，使用1.0.48版固件的红米AX6000与iPhone配合测试时，<b style="color:#F6358A">出现无线速率表现较差、无缝漫游掉线的情况，与高通平台的小米11配合测试时，平均延时较高。</b>新版固件解决了这些问题吗？😰😰😰</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/07/27/redmi-ax6000-1-0-60/#more" rel="contents">
