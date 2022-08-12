@@ -1173,6 +1173,7 @@ header.header {
 .site-subtitle {
   color: var(--text-color);
   font-size: 1.5em;
+  font-weight: 700;
   margin: 10px 0;
 }
 .use-motion .site-title,
@@ -2652,7 +2653,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #b03b69;
+  background: #5cc7ff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
