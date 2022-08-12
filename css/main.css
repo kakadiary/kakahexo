@@ -1172,7 +1172,7 @@ header.header {
 }
 .site-subtitle {
   color: var(--text-color);
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1533,7 +1533,7 @@ header.header {
 }
 .site-state-item-count {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 600;
 }
 .site-state-item-name {
@@ -1769,7 +1769,7 @@ header.header {
   width: 10px;
 }
 .posts-collapse .post-content .collection-year {
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: bold;
   margin: 60px 0;
   position: relative;
@@ -1995,7 +1995,7 @@ header.header {
   text-align: center;
 }
 .posts-expand .post-title {
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 700;
   margin: initial;
   overflow-wrap: break-word;
@@ -2499,8 +2499,8 @@ ul.breadcrumb li:last-child {
 }
 @media (max-width: 767px) {
   .main-inner {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 @media (max-width: 767px) {
@@ -2653,7 +2653,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #3d5975;
+  background: #a3a2eb;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
