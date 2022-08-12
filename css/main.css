@@ -1116,16 +1116,16 @@ header.header {
 }
 .header-inner {
   margin: 0 auto;
-  width: 600px;
+  width: 650px;
 }
 @media (min-width: 1200px) {
   .header-inner {
-    width: 650px;
+    width: 700px;
   }
 }
 @media (min-width: 1600px) {
   .header-inner {
-    width: 700px;
+    width: 750px;
   }
 }
 .site-brand-container {
@@ -1557,16 +1557,16 @@ header.header {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 600px;
+  width: 650px;
 }
 @media (min-width: 1200px) {
   .footer-inner {
-    width: 650px;
+    width: 700px;
   }
 }
 @media (min-width: 1600px) {
   .footer-inner {
-    width: 700px;
+    width: 750px;
   }
 }
 .use-motion .footer {
@@ -2484,16 +2484,16 @@ ul.breadcrumb li:last-child {
 }
 .main-inner {
   margin: 0 auto;
-  width: 600px;
+  width: 650px;
 }
 @media (min-width: 1200px) {
   .main-inner {
-    width: 650px;
+    width: 700px;
   }
 }
 @media (min-width: 1600px) {
   .main-inner {
-    width: 700px;
+    width: 750px;
   }
 }
 @media (max-width: 767px) {
@@ -2652,7 +2652,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff6cff;
+  background: #b03b69;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
