@@ -2499,8 +2499,8 @@ ul.breadcrumb li:last-child {
 }
 @media (max-width: 767px) {
   .main-inner {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 @media (max-width: 767px) {
@@ -2653,7 +2653,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #a3a2eb;
+  background: #5daa90;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
