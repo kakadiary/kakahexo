@@ -21,18 +21,18 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":"dark","version":"8.12.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="1.0.15版固件的问题我们在 《最便宜的双2.5G+USB3.0 普联XDR6088详尽对比评测》 视频中，使用的1.0.15版固件进行测试。测试结果与使用同平台同芯片的红米AX6000类似，在与iPhone配合时，都出现了无线速率表现较差的情况。除此之外，XDR6088和采用麒麟无线芯片的华为P40Pro配合使用时，远距离测试结果拉胯！我们一起来看看1.0.22版固件是否解决了这些问题。">
+    <meta name="description" content="1.0.15 版固件的问题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="普联XDR6088 新固件复测（固件版本1.0.22）">
 <meta property="og:url" content="http://example.com/2022/08/08/tp-xdr6088-1022/index.html">
 <meta property="og:site_name" content="卡卡的鼓捣日记">
-<meta property="og:description" content="1.0.15版固件的问题我们在 《最便宜的双2.5G+USB3.0 普联XDR6088详尽对比评测》 视频中，使用的1.0.15版固件进行测试。测试结果与使用同平台同芯片的红米AX6000类似，在与iPhone配合时，都出现了无线速率表现较差的情况。除此之外，XDR6088和采用麒麟无线芯片的华为P40Pro配合使用时，远距离测试结果拉胯！我们一起来看看1.0.22版固件是否解决了这些问题。">
+<meta property="og:description" content="1.0.15 版固件的问题">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.19ta.cn/tp_xdr6088_1022/titlepage720p.jpg">
 <meta property="og:image" content="https://cdn.19ta.cn/tp_xdr6088_1022/updateDocument.gif">
 <meta property="og:image" content="https://cdn.19ta.cn/tp_xdr6088_1022/smb.png">
 <meta property="article:published_time" content="2022-08-08T04:45:15.000Z">
-<meta property="article:modified_time" content="2022-08-11T08:58:20.863Z">
+<meta property="article:modified_time" content="2022-08-22T02:49:52.776Z">
 <meta property="article:author" content="19ta">
 <meta property="article:tag" content="路由器">
 <meta property="article:tag" content="普联XDR6088">
@@ -143,7 +143,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-0-15%E7%89%88%E5%9B%BA%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">1.0.15版固件的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-0-22%E7%89%88%E5%9B%BA%E4%BB%B6%E6%9B%B4%E6%96%B0%E4%BA%86%E5%95%A5%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">1.0.22版固件更新了啥？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-0-22%E7%89%88%E5%9B%BA%E4%BB%B6%E9%92%88%E5%AF%B9%E6%80%A7%E5%A4%8D%E6%B5%8B"><span class="nav-number">3.</span> <span class="nav-text">1.0.22版固件针对性复测</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-0-22%E5%9B%BA%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">1.0.22固件测试总结：</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-0-15-%E7%89%88%E5%9B%BA%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">1.0.15 版固件的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-0-22-%E7%89%88%E5%9B%BA%E4%BB%B6%E6%9B%B4%E6%96%B0%E4%BA%86%E5%95%A5%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">1.0.22 版固件更新了啥？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-0-22-%E7%89%88%E5%9B%BA%E4%BB%B6%E9%92%88%E5%AF%B9%E6%80%A7%E5%A4%8D%E6%B5%8B"><span class="nav-number">3.</span> <span class="nav-text">1.0.22 版固件针对性复测</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-0-22-%E5%9B%BA%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">1.0.22 固件测试总结：</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -265,7 +265,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-08-11 16:58:20" itemprop="dateModified" datetime="2022-08-11T16:58:20+08:00">2022-08-11</time>
+      <time title="修改时间：2022-08-22 10:49:52" itemprop="dateModified" datetime="2022-08-22T10:49:52+08:00">2022-08-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -316,13 +316,20 @@
     
     <div class="post-body" itemprop="articleBody">
         <p><img src="https://cdn.19ta.cn/tp_xdr6088_1022/titlepage720p.jpg"></p>
-<h2 id="1-0-15版固件的问题"><a href="#1-0-15版固件的问题" class="headerlink" title="1.0.15版固件的问题"></a>1.0.15版固件的问题</h2><p>我们在<a href="https://www.bilibili.com/video/BV1uv4y1u7jZ/" target="_blank"> <em>《最便宜的双2.5G+USB3.0 普联XDR6088详尽对比评测》</em></a> 视频中，使用的1.0.15版固件进行测试。测试结果与使用同平台同芯片的红米AX6000类似，<b style="color:#F6358A">在与iPhone配合时，都出现了无线速率表现较差的情况。</b>除此之外，<b style="color:#F6358A">XDR6088和采用麒麟无线芯片的华为P40Pro配合使用时，远距离测试结果拉胯！</b>我们一起来看看1.0.22版固件是否解决了这些问题。</p>
-<h2 id="1-0-22版固件更新了啥？"><a href="#1-0-22版固件更新了啥？" class="headerlink" title="1.0.22版固件更新了啥？"></a>1.0.22版固件更新了啥？</h2><p><img src="https://cdn.19ta.cn/tp_xdr6088_1022/updateDocument.gif"></p>
-<p>普联官方并未说明22版固件更新内容！😓😓😓<br>大概是由于1.0.21版固件是个大版本更新，增加了Docker、行为管理和游戏加速功能，而22版固件更新日期与21版十分接近，大概率是一个修复Bug的常规版本升级。</p>
-<h2 id="1-0-22版固件针对性复测"><a href="#1-0-22版固件针对性复测" class="headerlink" title="1.0.22版固件针对性复测"></a>1.0.22版固件针对性复测</h2><hr>
+<hr>
+
+<h2 id="1-0-15-版固件的问题"><a href="#1-0-15-版固件的问题" class="headerlink" title="1.0.15 版固件的问题"></a>1.0.15 版固件的问题</h2><p>我们在<a href="https://www.bilibili.com/video/BV1uv4y1u7jZ/" target="_blank"> <em>《最便宜的双 2.5G + USB3.0 普联 XDR6088 详尽对比评测》</em></a> 视频中，使用的 1.0.15 版固件进行测试。测试结果与使用同平台同芯片的红米 AX6000 类似，<b style="color:#F6358A">在与 iPhone 配合时，都出现了无线速率表现较差的情况。</b>除此之外，<b style="color:#F6358A">XDR6088和采用麒麟无线芯片的华为 P40 Pro 配合使用时，远距离测试结果拉胯！</b>我们一起来看看 1.0.22 版固件是否解决了这些问题。</p>
+<hr>
+
+<h2 id="1-0-22-版固件更新了啥？"><a href="#1-0-22-版固件更新了啥？" class="headerlink" title="1.0.22 版固件更新了啥？"></a>1.0.22 版固件更新了啥？</h2><p><img src="https://cdn.19ta.cn/tp_xdr6088_1022/updateDocument.gif"></p>
+<p>普联官方并未说明 22 版固件更新内容！😓😓😓<br>大概是由于 1.0.21 版固件是个大版本更新，增加了 Docker、行为管理和游戏加速功能，而 22 版固件更新日期与21版十分接近，大概率是一个修复 Bug 的常规版本升级。</p>
+<hr>
+
+<h2 id="1-0-22-版固件针对性复测"><a href="#1-0-22-版固件针对性复测" class="headerlink" title="1.0.22 版固件针对性复测"></a>1.0.22 版固件针对性复测</h2><br>
+
 <center><b>
 
-<p>配合iPhone13的无线性能测试结果（Mbps）</p>
+<p>配合 iPhone13 的无线性能测试结果（Mbps）</p>
 <p></p></b></center><p></p>
 <table>
 <thead>
@@ -346,12 +353,11 @@
 <td align="center">77</td>
 </tr>
 </tbody></table>
-<p>从测试结果看，新版固件在A点速率表现和老版固件在伯仲之间，但在<b style="color:#F6358A">B、C两点分别提升了37%和65%，提升幅度相当大！</b>要知道 <a target="_blank" rel="noopener" href="https://www.19ta.cn/2022/07/27/redmi-ax6000-1-0-60/">红米AX6000的新固件复测</a>，iPhone的提升并不明显，看来联发科平台确实还有很大优化空间。</p>
-<hr>
-
+<p>从测试结果看，新版固件在 A 点速率表现和老版固件在伯仲之间，但在<b style="color:#F6358A"> B、C 两点分别提升了 37% 和 65% ，提升幅度相当大！</b>要知道 <a target="_blank" rel="noopener" href="https://www.19ta.cn/2022/07/27/redmi-ax6000-1-0-60/">红米AX6000的新固件复测</a>， iPhone 的提升并不明显，看来联发科平台确实还有很大优化空间。</p>
+<br>
 <center><b>
 
-<p>配合华为P40Pro的无线性能测试结果（Mbps）</p>
+<p>配合华为 P40 Pro 的无线性能测试结果（Mbps）</p>
 <p></p></b></center><p></p>
 <table>
 <thead>
@@ -375,13 +381,12 @@
 <td align="center">47</td>
 </tr>
 </tbody></table>
-<p>唉！XDR6088配合华为P40Pro的远距离速率虽然提升不小，但表现依旧疲软，未达到正常水平。😪😤😤</p>
-<hr>
+<p>唉！XDR6088 配合华为 P40 Pro 的远距离速率虽然提升不小，但表现依旧疲软，未达到正常水平。😪😤😤<br>无论是红米 AX6000 还是 XDR6088 在评测视频中与同平台的 K50 Pro 配合使用时，速率表现差强人意。既然新固件和 iPhone 的测试结果喜人，那配合同平台的 K50 Pro 会不会也有提升呢？</p>
+<br>
 
-<p>无论是红米AX6000还是XDR6088在评测视频中与同平台的K50Pro配合使用时，速率表现差强人意。既然新固件和iPhone的测试结果喜人，那配合同平台的K50Pro会不会也有提升呢？</p>
 <center><b>
 
-<p>配合红米K50Pro的无线性能测试结果（Mbps）</p>
+<p>配合红米 K50 Pro 的无线性能测试结果（Mbps）</p>
 <p></p></b></center><p></p>
 <table>
 <thead>
@@ -405,18 +410,18 @@
 <td align="center">165</td>
 </tr>
 </tbody></table>
-<p>从测试结果看，<b style="color:#F6358A">在B、C两点均有10%左右的提升</b>。</p>
-<hr>
+<p>从测试结果看，<b style="color:#F6358A">在 B、C 两点均有 10% 左右的提升</b>。</p>
+<br>
 
-<p>除此之外，<b style="color:#F6358A">15版固件中出现的smb方式无法正常访问USB外接存储设备的问题也已经解决</b>，在浏览器输入IP地址即可找到USB3.0接入的存储设备。</p>
+<p>除此之外，<b style="color:#F6358A">15 版固件中出现的 smb 方式无法正常访问USB外接存储设备的问题也已经解决</b>，在浏览器输入 IP 地址即可找到 USB3.0 接入的存储设备。</p>
 <p><img src="https://cdn.19ta.cn/tp_xdr6088_1022/smb.png"> </p>
 <hr>
 
 
-<h2 id="1-0-22固件测试总结："><a href="#1-0-22固件测试总结：" class="headerlink" title="1.0.22固件测试总结："></a>1.0.22固件测试总结：</h2><p>✅ 与iPhone配合使用，在中远距离的速率表现提升十分明显！</p>
-<p>⭕️ 与麒麟芯片的华为P40pro配合使用时，远距离速率表现拉胯的问题仍为解决。</p>
-<p>✅ 与同平台K50Pro配合使用时，中远距离速率表现有10%左右的提升。</p>
-<p>⬆️ 整体而言，1.0.22版固件的速率表现非常出色，并且还支持Docker、行为管理以及游戏加速，强烈推荐小伙伴们升级。</p>
+<h2 id="1-0-22-固件测试总结："><a href="#1-0-22-固件测试总结：" class="headerlink" title="1.0.22 固件测试总结："></a>1.0.22 固件测试总结：</h2><p>✅ 与 iPhone 配合使用，在中远距离的速率表现提升十分明显！</p>
+<p>⭕️ 与麒麟芯片的华为 P40 pro 配合使用时，远距离速率表现拉胯的问题仍为解决。</p>
+<p>✅ 与同平台 K50 Pro 配合使用时，中远距离速率表现有 10% 左右的提升。</p>
+<p>⬆️ 整体而言，1.0.22 版固件的速率表现非常出色，并且还支持 Docker、行为管理以及游戏加速，强烈推荐小伙伴们升级。</p>
 
     </div>
 

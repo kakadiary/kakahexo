@@ -285,7 +285,7 @@ hr {
   background-image: repeating-linear-gradient(-45deg, #999, #999 4px, transparent 4px, transparent 8px);
   border: 0;
   height: 3px;
-  margin: 40px 0;
+  margin: 80px 0;
 }
 blockquote {
   border-left: 4px solid #999;
@@ -2644,7 +2644,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #17ffff;
+  background: #bfc94b;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
