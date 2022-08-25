@@ -2834,7 +2834,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ffff32;
+  background: #25ff12;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2865,15 +2865,15 @@ ul.breadcrumb li:last-child {
   opacity: 0 !important;
 }
 .tag {
-  background: rgba(255,201,225,0.25);
-  color: #f6358a;
+  background: rgba(48,171,224,0.2);
+  color: #008dcf;
   padding: 0.3em;
   border-radius: 0.5em;
 }
 @media (prefers-color-scheme: dark) {
   .tag {
-    background: rgba(48,171,224,0.2);
-    color: #00aeff;
+    background: rgba(255,201,225,0.1);
+    color: #f6358a;
     padding: 0.3em;
     border-radius: 0.5em;
   }
