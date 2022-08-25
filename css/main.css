@@ -2677,7 +2677,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #20e4a1;
+  background: #d2b12d;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2706,4 +2706,18 @@ ul.breadcrumb li:last-child {
 }
 .site-title {
   opacity: 0 !important;
+}
+.tag {
+  background: rgba(255,201,225,0.25);
+  color: #f6358a;
+  padding: 0.3em;
+  border-radius: 0.5em;
+}
+@media (prefers-color-scheme: dark) {
+  .tag {
+    background: rgba(48,171,224,0.2);
+    color: #00aeff;
+    padding: 0.3em;
+    border-radius: 0.5em;
+  }
 }
