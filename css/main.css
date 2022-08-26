@@ -2834,7 +2834,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #41ffab;
+  background: #0df4ff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2875,7 +2875,7 @@ ul.breadcrumb li:last-child {
     background: rgba(255,201,225,0.1);
     color: #f6358a;
     padding: 0.3em;
-    border-radius: 0.5em;
+    border-radius: 8px;
   }
 }
 .site-overview {
@@ -2886,4 +2886,9 @@ canvas#canvas {
 }
 .site-state {
   font-family: 'Times New Roman', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+.posts-expand .post-title-link::before {
+  height: 100%;
+  background-color: rgba(6,132,189,0.2);
+  border-radius: 10px;
 }
