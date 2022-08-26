@@ -2834,7 +2834,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ed93dd;
+  background: #06f644;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2883,4 +2883,7 @@ ul.breadcrumb li:last-child {
 }
 canvas#canvas {
   margin-top: 20px;
+}
+.site-state {
+  font-family: 'Times New Roman', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
