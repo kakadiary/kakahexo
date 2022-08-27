@@ -2834,7 +2834,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #b925ff;
+  background: #fe7057;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2891,4 +2891,10 @@ canvas#canvas {
   height: 100%;
   background-color: rgba(6,132,189,0.2);
   border-radius: 10px;
+}
+:root {
+/* 字体大小 */
+  --waline-font-size: 0.9rem !important;
+/* 头像 */
+  --waline-avatar-size: 2.2rem !important;
 }
