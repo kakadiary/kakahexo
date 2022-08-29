@@ -2833,7 +2833,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #1faa30;
+  background: #ff6f77;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2906,5 +2906,9 @@ canvas#canvas {
   list-style: circle;
   list-style-position: inside;
   text-align: left;
-  margin: 5px 10px;
+}
+.post-toc-wrap .links-of-blogroll-list li {
+  border-bottom: 1px solid dotted;
+  margin-top: 10px;
+  padding-left: 15px;
 }
