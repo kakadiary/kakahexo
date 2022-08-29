@@ -1651,7 +1651,6 @@ header.header {
   line-height: 1.8;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .post-toc .nav .nav-child {
   display: none;
@@ -2834,7 +2833,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #86478c;
+  background: #1faa30;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2902,4 +2901,10 @@ canvas#canvas {
   position: absolute;
   right: 0;
   top: 0;
+}
+.post-toc-wrap .links-of-blogroll-list {
+  list-style: circle;
+  list-style-position: inside;
+  text-align: left;
+  margin: 5px 10px;
 }
