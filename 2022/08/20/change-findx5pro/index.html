@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":"dark","version":"8.12.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":"dark","version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
 <script async defer data-website-id="a28c0907-86e9-4965-a690-5555e92c944c" src="https://analyze.timochan.cn/umami.js"></script>
     <meta name="description" content="前些日子联发科 Filogic 平台的路由器大量上市，为配合测试我首发购入了联发科平台手机 -📱 红米 K50Pro 天玑版。在 🌐 红米 AX6000 以及 🌐 普联 XDR6088 两台路由器的测试中，这台手机 wifi 性能表现不佳 📉！历经几次固件更新后，速率表现也没有明显提升，这让我一度怀疑是路由器优化问题 ⁉️ 🤔">
@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://cdn.19ta.cn/Change_findX5Pro/%E6%89%8B%E6%9C%BA2.png">
 <meta property="og:image" content="https://cdn.19ta.cn/Change_findX5Pro/%E8%B7%AF%E7%94%B1%E5%99%A8%E6%B5%8B%E8%AF%95%E5%9C%B0%E5%9B%BE.png">
 <meta property="article:published_time" content="2022-08-20T09:35:51.000Z">
-<meta property="article:modified_time" content="2022-08-22T03:31:34.018Z">
+<meta property="article:modified_time" content="2022-09-15T06:10:27.736Z">
 <meta property="article:author" content="19ta">
 <meta property="article:tag" content="手机">
 <meta property="article:tag" content="路由器">
@@ -53,7 +53,7 @@
 
 
 
-<link rel="dns-prefetch" href="waline.19ta.cn">
+<link rel="dns-prefetch" href="waline.19ta.cn"><link rel="stylesheet" type="text/css" href="/css/injector/main.css" /><link rel="preload" as="style" href="/css/injector/light.css" /><link rel="preload" as="style" href="/css/injector/dark.css" />
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -244,10 +244,6 @@
     </header>
 
     
-  <div class="back-to-top" role="button" aria-label="返回顶部">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -411,6 +407,54 @@
 <p>得益于 NX15000 企业级的矩阵天线，测试结果有大幅度提升！两台手机的差距也更加明显！find X5Pro 在B点和C点依旧大幅度领先，<b style="color:#F6358A"> B 点领先幅度达到 77%，C 点更是突破了 100% 😂</b></p>
 <hr>
 
+<!-- <div id="echarts249" style="width: 61.8%;height: 500px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/4.3.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+	// 基于准备好的dom，初始化echarts实例
+	var myChart = echarts.init(document.getElementById('echarts249'));
+	// 指定图表的配置项和数据
+	option = {
+  title: {
+      text: 'Stacked Line'
+  },
+  tooltip: {
+    trigger: 'axis'
+  },
+  legend: {
+    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      name: 'Search Engine',
+      type: 'bar',
+      stack: 'Total',
+      data: [820, 932, 901, 934, 1290, 1330, 1320]
+    }
+  ]
+};
+	// 使用刚指定的配置项和数据显示图表。
+	myChart.setOption(option);
+</script> -->
+
 <p>✅ 从测试结果看，硬件配置相同的两台手机无线性能完全不在同一水准，find X5Pro 的无线性能要强的多！</p>
 <p>❎ 红米 K50Pro 糟糕的无线性能表现，已经在一定程度上影响到对路由器性能的理性判断。</p>
 <p>💔 所以我又自费购入一台 findX5Pro，替换红米 K50Pro，在之后的评测中使用。</p>
@@ -422,6 +466,12 @@
     
 
     <footer class="post-footer">
+<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px; padding: 30px 0;">--------------------------------------- <i class="fa fa-heart"></i> The End <i class="fa fa-heart"></i> ---------------------------------------  </div>
+    
+</div>
+
           <div class="followme">
   <span>欢迎关注我的其它发布渠道</span>
 
@@ -550,6 +600,26 @@ document.addEventListener('page:loaded', () => {
     POWERMODE.shake = false;
     document.body.addEventListener('input', POWERMODE);
   </script>
-
+<div class="moon-menu">
+  <div class="moon-menu-items">
+    
+    <div id="moon-menu-item-back2bottom" class="moon-menu-item" onclick="back2bottom()">
+      <i class='fa fa-chevron-down'></i>    </div>
+    
+    <div id="moon-menu-item-back2top" class="moon-menu-item" onclick="back2top()">
+      <i class='fa fa-chevron-up'></i>    </div>
+    
+  </div>
+  <div class="moon-menu-button">
+    <svg class="moon-menu-bg">
+      <circle class="moon-menu-cricle" cx="50%" cy="50%" r="44%"></circle>
+      <circle class="moon-menu-border" cx="50%" cy="50%" r="48%"></circle>
+    </svg>
+    <div class="moon-menu-content">
+      <div class="moon-menu-icon"><i class='fas fa-ellipsis-v'></i></div>
+      <div class="moon-menu-text"></div>
+    </div>
+  </div>
+</div><script src="/js/injector.js"></script>
 </body>
 </html>
