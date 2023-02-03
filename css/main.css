@@ -2800,7 +2800,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ffd1ff;
+  background: #67dfff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2870,12 +2870,17 @@ canvas#canvas {
   top: 0;
 }
 .post-toc-wrap .links-of-blogroll-list {
-  list-style: circle;
-  list-style-position: inside;
+  list-style: disc;
+  list-style-position: outside;
   text-align: left;
+  margin-top: 1em;
+  padding: 0 2em;
+}
+.links-of-blogroll-title {
+  font-size: 1.2em;
 }
 .post-toc-wrap .links-of-blogroll-list li {
-  border-bottom: 1px solid dotted;
   margin-top: 10px;
-  padding-left: 15px;
+  padding-left: 10px;
+  line-height: 25px;
 }
