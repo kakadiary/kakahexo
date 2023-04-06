@@ -22,17 +22,17 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":"dark","version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
 <script async defer data-website-id="a28c0907-86e9-4965-a690-5555e92c944c" src="https://analyze.timochan.cn/umami.js"></script>
-    <meta name="description" content="🗂 1.0.59 版固件的问题">
+    <meta name="description" content="由于小米官方宣称即将发布适配 WiFi 7的固件， 所以在  《欠火候！小米万兆路由深度评测》中 ，我暂未对其无线性能进行测试。即便如此，在处理器和有线网口测试环节还是出现了处理器转发性能偏低，万兆网口与多个2.5G 网口传输数据掉速的问题。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="小米万兆路由器新版固件复测（固件版本1.0.77）">
 <meta property="og:url" content="http://example.com/2023/04/05/mi-be10000-1077/index.html">
 <meta property="og:site_name" content="卡卡的鼓捣日记">
-<meta property="og:description" content="🗂 1.0.59 版固件的问题">
+<meta property="og:description" content="由于小米官方宣称即将发布适配 WiFi 7的固件， 所以在  《欠火候！小米万兆路由深度评测》中 ，我暂未对其无线性能进行测试。即便如此，在处理器和有线网口测试环节还是出现了处理器转发性能偏低，万兆网口与多个2.5G 网口传输数据掉速的问题。">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.19ta.cn/mi-be10000-1077/titlepage720p.jpg">
 <meta property="og:image" content="https://cdn.19ta.cn/mi-be10000-1077/updateDoc.png">
 <meta property="article:published_time" content="2023-04-05T12:39:17.000Z">
-<meta property="article:modified_time" content="2023-04-06T02:13:21.717Z">
+<meta property="article:modified_time" content="2023-04-06T02:47:44.650Z">
 <meta property="article:author" content="19ta">
 <meta property="article:tag" content="小米万兆路由">
 <meta property="article:tag" content="路由器">
@@ -143,7 +143,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-1-0-59-%E7%89%88%E5%9B%BA%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">🗂 1.0.59 版固件的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-1-0-77-%E7%89%88%E5%9B%BA%E4%BB%B6%E6%9B%B4%E6%96%B0%E4%BA%86%E5%95%A5%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">🗂 1.0.77 版固件更新了啥？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-1-0-77-%E7%89%88%E5%9B%BA%E4%BB%B6%E9%92%88%E5%AF%B9%E6%80%A7%E6%B5%8B%E8%AF%95"><span class="nav-number">3.</span> <span class="nav-text">🗂 1.0.77 版固件针对性测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93"><span class="nav-number">4.</span> <span class="nav-text">🗂 测试总结</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-1-0-77-%E7%89%88%E5%9B%BA%E4%BB%B6%E6%9B%B4%E6%96%B0%E4%BA%86%E5%95%A5%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">🗂 1.0.77 版固件更新了啥？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-1-0-77-%E7%89%88%E5%9B%BA%E4%BB%B6%E9%92%88%E5%AF%B9%E6%80%A7%E6%B5%8B%E8%AF%95"><span class="nav-number">2.</span> <span class="nav-text">🗂 1.0.77 版固件针对性测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93"><span class="nav-number">3.</span> <span class="nav-text">🗂 测试总结</span></a></li></ol></div>
           <hr/>
           
             <div class="links-of-blogroll motion-element links-of-blogroll-block">
@@ -338,7 +338,8 @@
         <p><img src="https://cdn.19ta.cn/mi-be10000-1077/titlepage720p.jpg"></p>
 <br>
 
-<h2 id="🗂-1-0-59-版固件的问题"><a href="#🗂-1-0-59-版固件的问题" class="headerlink" title="🗂 1.0.59 版固件的问题"></a>🗂 1.0.59 版固件的问题</h2><p>　　由于小米官方宣称即将发布适配 WiFi 7的固件， 所以在 <a href="https://www.bilibili.com/video/BV1xD4y1g7X5/" target="_blank"> 《欠火候！小米万兆路由深度评测》</a>中 ，我暂未对其无线性能进行测试。即便如此，在处理器和有线网口测试环节还是出现了<b style="color:#F6358A">处理器转发性能偏低，万兆网口与多个2.5G 网口传输数据掉速的问题。</b></p>
+
+<p>　　由于小米官方宣称即将发布适配 WiFi 7的固件， 所以在 <a href="https://www.bilibili.com/video/BV1xD4y1g7X5/" target="_blank"> 《欠火候！小米万兆路由深度评测》</a>中 ，我暂未对其无线性能进行测试。即便如此，在处理器和有线网口测试环节还是出现了<b style="color:#F6358A">处理器转发性能偏低，万兆网口与多个2.5G 网口传输数据掉速的问题。</b></p>
 <p>　　 4月3日，小米发布了1.0.77 版新固件，新固件支持 WiFi7 了吗？原有固件的问题解决了吗？</p>
 <hr>
 

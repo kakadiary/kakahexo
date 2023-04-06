@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-06T02:13:21.717Z</updated>
+  <updated>2023-04-06T02:47:44.650Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,13 +21,14 @@
     <link href="http://example.com/2023/04/05/mi-be10000-1077/"/>
     <id>http://example.com/2023/04/05/mi-be10000-1077/</id>
     <published>2023-04-05T12:39:17.000Z</published>
-    <updated>2023-04-06T02:13:21.717Z</updated>
+    <updated>2023-04-06T02:47:44.650Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.19ta.cn/mi-be10000-1077/titlepage720p.jpg&quot;&gt;&lt;/p&gt;
 &lt;br&gt;
 
-&lt;h2 id=&quot;🗂-1-0-59-版固件的问题&quot;&gt;&lt;a href=&quot;#🗂-1-0-59-版固件的问题&quot; class=&quot;headerlink&quot; title=&quot;🗂 1.0.59 版固件的问题&quot;&gt;&lt;/a&gt;🗂 1.0.59 版固件的问题&lt;/h2&gt;</summary>
+
+&lt;p&gt;　　由于小米官方宣称即将发布适配 WiFi 7的固件， 所以在 &lt;a href=&quot;https://www.bilibili.com/video/BV1xD4y1g7X5/&quot; target=&quot;_blank&quot;&gt; 《欠火候！小米万兆路由深度评测》&lt;/a&gt;中 ，我暂未对其无线性能进行测试。即便如此，在处理器和有线网口测试环节还是出现了&lt;b style=&quot;color:#F6358A&quot;&gt;处理器转发性能偏低，万兆网口与多个2.5G 网口传输数据掉速的问题。&lt;/b&gt;&lt;/p&gt;</summary>
     
     
     
