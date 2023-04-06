@@ -22,25 +22,32 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":"dark","version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
 <script async defer data-website-id="a28c0907-86e9-4965-a690-5555e92c944c" src="https://analyze.timochan.cn/umami.js"></script>
-    <meta name="description" content=". 分 享 热 爱 .">
-<meta property="og:type" content="website">
-<meta property="og:title" content="卡卡的鼓捣日记">
-<meta property="og:url" content="http://example.com/tags/%E7%BA%A2%E7%B1%B3AX6000/index.html">
+    <meta name="description" content="🗂 1.0.59 版固件的问题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小米万兆路由器新版固件复测（固件版本1.0.77）">
+<meta property="og:url" content="http://example.com/2023/04/05/mi-be10000-1077/index.html">
 <meta property="og:site_name" content="卡卡的鼓捣日记">
-<meta property="og:description" content=". 分 享 热 爱 .">
+<meta property="og:description" content="🗂 1.0.59 版固件的问题">
 <meta property="og:locale">
+<meta property="og:image" content="https://cdn.19ta.cn/mi-be10000-1077/titlepage720p.jpg">
+<meta property="og:image" content="https://cdn.19ta.cn/mi-be10000-1077/updateDoc.png">
+<meta property="article:published_time" content="2023-04-05T12:39:17.000Z">
+<meta property="article:modified_time" content="2023-04-06T02:13:21.717Z">
 <meta property="article:author" content="19ta">
+<meta property="article:tag" content="路由器">
+<meta property="article:tag" content="小米万兆路由">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.19ta.cn/mi-be10000-1077/titlepage720p.jpg">
 
 
-<link rel="canonical" href="http://example.com/tags/%E7%BA%A2%E7%B1%B3AX6000/">
+<link rel="canonical" href="http://example.com/2023/04/05/mi-be10000-1077/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-Hans","comments":"","permalink":"","path":"tags/红米AX6000/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-Hans","comments":true,"permalink":"http://example.com/2023/04/05/mi-be10000-1077/","path":"2023/04/05/mi-be10000-1077/","title":"小米万兆路由器新版固件复测（固件版本1.0.77）"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>标签: 红米AX6000 | 卡卡的鼓捣日记</title>
+<title>小米万兆路由器新版固件复测（固件版本1.0.77） | 卡卡的鼓捣日记</title>
   
 
 
@@ -124,7 +131,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -136,6 +143,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-1-0-59-%E7%89%88%E5%9B%BA%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">🗂 1.0.59 版固件的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-1-0-77-%E7%89%88%E5%9B%BA%E4%BB%B6%E6%9B%B4%E6%96%B0%E4%BA%86%E5%95%A5%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">🗂 1.0.77 版固件更新了啥？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-1-0-77-%E7%89%88%E5%9B%BA%E4%BB%B6%E9%92%88%E5%AF%B9%E6%80%A7%E6%B5%8B%E8%AF%95"><span class="nav-number">3.</span> <span class="nav-text">🗂 1.0.77 版固件针对性测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93"><span class="nav-number">4.</span> <span class="nav-text">🗂 测试总结</span></a></li></ol></div>
           <hr/>
           
             <div class="links-of-blogroll motion-element links-of-blogroll-block">
@@ -246,51 +254,251 @@
 </noscript>
 
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">红米AX6000
-          <small>标签</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/05/mi-be10000-1077/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="19ta">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="卡卡的鼓捣日记">
+      <meta itemprop="description" content=". 分 享 热 爱 .">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="小米万兆路由器新版固件复测（固件版本1.0.77） | 卡卡的鼓捣日记">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          小米万兆路由器新版固件复测（固件版本1.0.77）
         </h1>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-04-05 20:39:17" itemprop="dateCreated datePublished" datetime="2023-04-05T20:39:17+08:00">2023-04-05</time>
+    </span>
+
+  
+    <span id="/2023/04/05/mi-be10000-1077/" class="post-meta-item leancloud_visitors" data-flag-title="小米万兆路由器新版固件复测（固件版本1.0.77）" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/2023/04/05/mi-be10000-1077/#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/2023/04/05/mi-be10000-1077/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><img src="https://cdn.19ta.cn/mi-be10000-1077/titlepage720p.jpg"></p>
+<br>
+
+<h2 id="🗂-1-0-59-版固件的问题"><a href="#🗂-1-0-59-版固件的问题" class="headerlink" title="🗂 1.0.59 版固件的问题"></a>🗂 1.0.59 版固件的问题</h2><p>　　由于小米官方宣称即将发布适配 WiFi 7的固件， 所以在 <a href="https://www.bilibili.com/video/BV1xD4y1g7X5/" target="_blank"> 《欠火候！小米万兆路由深度评测》</a>中 ，我暂未对其无线性能进行测试。即便如此，在处理器和有线网口测试环节还是出现了<b style="color:#F6358A">处理器转发性能偏低，万兆网口与多个2.5G 网口传输数据掉速的问题。</b></p>
+<p>　　 4月3日，小米发布了1.0.77 版新固件，新固件支持 WiFi7 了吗？原有固件的问题解决了吗？</p>
+<hr>
+
+<h2 id="🗂-1-0-77-版固件更新了啥？"><a href="#🗂-1-0-77-版固件更新了啥？" class="headerlink" title="🗂 1.0.77 版固件更新了啥？"></a>🗂 1.0.77 版固件更新了啥？</h2><p><img src="https://cdn.19ta.cn/mi-be10000-1077/updateDoc.png"></p>
+<p>💡 在 1.0.77 版固件更新日志中，<b style="color:	#3EA99F">明确表示未开放 WiFi7 功能，</b><b style="color:#F6358A">但提及修复了已知问题。</b></p>
+<hr>
+
+
+
+
+
+<h2 id="🗂-1-0-77-版固件针对性测试"><a href="#🗂-1-0-77-版固件针对性测试" class="headerlink" title="🗂 1.0.77 版固件针对性测试"></a>🗂 1.0.77 版固件针对性测试</h2><p>　　既然修复了已知问题，那我们就来进行回归测试，看看问题是否解决。</p>
+<br>
+
+<center><b>处理器转发性能测试结果（Kpps）</b></center>
+
+<table>
+<thead>
+<tr>
+<th align="center">固件</th>
+<th align="center">上行</th>
+<th align="center">下行</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1.0.59</td>
+<td align="center">83.3 Kpps （ ≈ 56 Mbps ）</td>
+<td align="center">92.8Kpps（ ≈ 62.5 Mbps ）</td>
+</tr>
+<tr>
+<td align="center">1.0.77</td>
+<td align="center">81.1 Kpps （ ≈ 54.5 Mbps）</td>
+<td align="center">92.1 Kpps（ ≈ 61.9Mbps ）</td>
+</tr>
+</tbody></table>
+<p>　　📝  两版固件测试结果基本一致。</p>
+<br>
+
+<center><b> 10G - 4 x 2.5G 速率测试结果（Kpps）</b></center>
+
+<table>
+<thead>
+<tr>
+<th align="center">固件</th>
+<th align="center">A点</th>
+<th align="center">上行</th>
+<th align="center">下行</th>
+<th align="center">双向</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1.0.59</td>
+<td align="center">10G 电口</td>
+<td align="center">9326</td>
+<td align="center">8366</td>
+<td align="center">13073</td>
+</tr>
+<tr>
+<td align="center">1.0.59</td>
+<td align="center">10G SFP+</td>
+<td align="center">9306</td>
+<td align="center">2688</td>
+<td align="center">12097</td>
+</tr>
+<tr>
+<td align="center">1.0.77</td>
+<td align="center">10G 电口</td>
+<td align="center">9275</td>
+<td align="center"><b style="color:#3EA99F">5832</b></td>
+<td align="center"><b style="color:#F6358A">14057</b></td>
+</tr>
+<tr>
+<td align="center">1.0.77</td>
+<td align="center">10G SFP+</td>
+<td align="center">9304</td>
+<td align="center">2576</td>
+<td align="center">11694</td>
+</tr>
+</tbody></table>
+<p>　　📝 从测试结果上看，10G 电口单向测试的下行结果为 <b style="color:#3EA99F">5832Mbps</b>，相比老版固件出现了 2500 Mbps 左右的下滑。双向速率测试又有 <b style="color:#F6358A">2000Mbps</b> 左右的提升，但均未达到正常水平！SFP+接口则没有明显差别。</p>
+<hr>
+
+<h2 id="🗂-测试总结"><a href="#🗂-测试总结" class="headerlink" title="🗂 测试总结"></a>🗂 测试总结</h2><p>　　看来这次更新的 1.0.77 版固件修复的已知问题并不包括视频中提及的两个问题！不过没关系，毕竟新架构的产品上线需要时间来完善。<br>　　据说普联的 WiFi 7 产品线四月底即将上市。作为一个米粉，希望小米能尽快将小米万兆路由调试好并适配 WiFi 7。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-07-27T16:51:08+08:00"
-              content="2022-07-27">
-          07-27
-        </time>
+    
+    
+    
+
+    <footer class="post-footer">
+<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px; padding: 30px 0;">--------------------------------------- <i class="fa fa-heart"></i> The End <i class="fa fa-heart"></i> ---------------------------------------  </div>
+    
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://space.bilibili.com/310343153">
+          <span class="icon">
+            <i class="fab fa-bilibili"></i>
+          </span>
+
+          <span class="label">bilibili</span>
+        </a>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/07/27/redmi-ax6000-1-0-60/" itemprop="url">
-            <span itemprop="name">红米AX6000的1.0.60版固件解决问题了吗？</span>
-          </a>
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://www.youtube.com/channel/UC5sraF8MVB-soSd56tKEHUg">
+          <span class="icon">
+            <i class="fab fa-youtube"></i>
+          </span>
+
+          <span class="label">YouTube</span>
+        </a>
       </div>
 
-      
-    </header>
-  </article>
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAEN-ydaOCUsyMb5VBQTJq47PbcaoQqP0nI6dhN7ZcoDQ">
+          <span class="icon">
+            <i class="fa fa-video-camera"></i>
+          </span>
 
-    </div>
+          <span class="label">头条</span>
+        </a>
+      </div>
   </div>
-  
-  
-  
+</div>
 
+          <div class="post-tags">
+              <a href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/" rel="tag"># 路由器</a>
+              <a href="/tags/%E5%B0%8F%E7%B1%B3%E4%B8%87%E5%85%86%E8%B7%AF%E7%94%B1/" rel="tag"># 小米万兆路由</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/08/20/change-findx5pro/" rel="prev" title="聊聊将测试机从红米K50Pro天玑版更换为OppoFindX5Pro天玑版的原因">
+                  <i class="fa fa-chevron-left"></i> 聊聊将测试机从红米K50Pro天玑版更换为OppoFindX5Pro天玑版的原因
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
 </div>
   </main>
 
@@ -332,7 +540,7 @@
   <script src="/js/third-party/statistics/lean-analytics.js"></script>
 
 
-<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline.19ta.cn","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"dark":"auto","avatar":"mm","meta":["nick","mail"],"pageSize":6,"visitor":false,"requiredMeta":["nick"],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","locale":{"placeholder":"有话和我说？"},"copyright":false,"el":"#waline","comment":true,"path":"/tags/%E7%BA%A2%E7%B1%B3AX6000/"}</script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline.19ta.cn","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"dark":"auto","avatar":"mm","meta":["nick","mail"],"pageSize":6,"visitor":false,"requiredMeta":["nick"],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","locale":{"placeholder":"有话和我说？"},"copyright":false,"el":"#waline","comment":true,"path":"/2023/04/05/mi-be10000-1077/"}</script>
 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
 <script>
 document.addEventListener('page:loaded', () => {
