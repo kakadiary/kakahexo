@@ -2800,7 +2800,7 @@ ul.breadcrumb li:last-child {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #52b4d9;
+  background: #ffff17;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2830,7 +2830,7 @@ ul.breadcrumb li:last-child {
 .site-title {
   opacity: 0 !important;
 }
-.tag {
+span.tag {
   background: rgba(48,171,224,0.2);
   color: #008dcf;
   padding: 0.3em;
