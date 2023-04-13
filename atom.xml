@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-13T14:50:46.691Z</updated>
+  <updated>2023-04-13T14:53:56.305Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,10 +21,12 @@
     <link href="http://example.com/2023/04/13/xdr3010v4-disassembly/"/>
     <id>http://example.com/2023/04/13/xdr3010v4-disassembly/</id>
     <published>2023-04-13T06:12:14.000Z</published>
-    <updated>2023-04-13T14:50:46.691Z</updated>
+    <updated>2023-04-13T14:53:56.305Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.19ta.cn/xdr3010v4-disassembly/titlepage.jpg&quot;&gt;&lt;/p&gt;
+&lt;br&gt;
+
 &lt;p&gt;　　普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。我们从官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！官网没有硬件变化的相关说明，所以只能拆机看看了。&lt;/p&gt;</summary>
     
     
