@@ -22,13 +22,14 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":"dark","version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
 <script async defer data-website-id="a28c0907-86e9-4965-a690-5555e92c944c" src="https://analyze.timochan.cn/umami.js"></script>
-    <meta name="description" content="普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.0">
+    <meta name="description" content="普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="普联 XDR 3010 V2 及 V4 版拆机对比">
 <meta property="og:url" content="http://example.com/2023/04/13/xdr3010v4-disassembly/index.html">
 <meta property="og:site_name" content="卡卡的鼓捣日记">
-<meta property="og:description" content="普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.0">
+<meta property="og:description" content="普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.">
 <meta property="og:locale">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/titlepage.jpg">
 <meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.jpg">
 <meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_2.jpg">
 <meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_3.jpg">
@@ -37,14 +38,14 @@
 <meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/5G.jpg">
 <meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/5G-fem.jpg">
 <meta property="article:published_time" content="2023-04-13T06:12:14.000Z">
-<meta property="article:modified_time" content="2023-04-13T13:49:35.416Z">
+<meta property="article:modified_time" content="2023-04-13T14:21:12.930Z">
 <meta property="article:author" content="19ta">
 <meta property="article:tag" content="路由器">
 <meta property="article:tag" content="XDR3010">
 <meta property="article:tag" content="普联">
 <meta property="article:tag" content="拆机">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.jpg">
+<meta name="twitter:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/titlepage.jpg">
 
 
 <link rel="canonical" href="http://example.com/2023/04/13/xdr3010v4-disassembly/">
@@ -346,7 +347,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>　　普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.0 版则是我自费购买并拆解拍摄。一起来看看两个版本有何不同吧！</p>
+        <p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/titlepage.jpg"></p>
+<p>　　普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.0 版则是我自费购买并拆解拍摄。一起来看看两个版本有何不同吧！</p>
 <hr>
 
 <h2 id="🗂-散热及屏蔽部分"><a href="#🗂-散热及屏蔽部分" class="headerlink" title="🗂 散热及屏蔽部分"></a>🗂 散热及屏蔽部分</h2><p>　　打开机身盖后，可以看到主板正面。相比 V 2.0 版，V 4.0 版没有散热鳍片，而是使用了一个大尺的散热金属板。</p>
