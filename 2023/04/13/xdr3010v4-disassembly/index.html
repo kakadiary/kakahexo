@@ -29,22 +29,22 @@
 <meta property="og:site_name" content="卡卡的鼓捣日记">
 <meta property="og:description" content="普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.0">
 <meta property="og:locale">
-<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.png">
-<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_2.png">
-<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_3.png">
-<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/CPU.png">
-<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/2.4G_fem.png">
-<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/5G.png">
-<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/5G_fem.png">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.jpg">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_2.jpg">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_3.jpg">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/CPU.jpg">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/2.4G-fem.jpg">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/5G.jpg">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/5G-fem.jpg">
 <meta property="article:published_time" content="2023-04-13T06:12:14.000Z">
-<meta property="article:modified_time" content="2023-04-13T13:25:32.555Z">
+<meta property="article:modified_time" content="2023-04-13T13:49:35.416Z">
 <meta property="article:author" content="19ta">
 <meta property="article:tag" content="路由器">
 <meta property="article:tag" content="XDR3010">
 <meta property="article:tag" content="普联">
 <meta property="article:tag" content="拆机">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.png">
+<meta name="twitter:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.jpg">
 
 
 <link rel="canonical" href="http://example.com/2023/04/13/xdr3010v4-disassembly/">
@@ -350,21 +350,21 @@
 <hr>
 
 <h2 id="🗂-散热及屏蔽部分"><a href="#🗂-散热及屏蔽部分" class="headerlink" title="🗂 散热及屏蔽部分"></a>🗂 散热及屏蔽部分</h2><p>　　打开机身盖后，可以看到主板正面。相比 V 2.0 版，V 4.0 版没有散热鳍片，而是使用了一个大尺的散热金属板。</p>
-<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.png"></p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.jpg"></p>
 <p>　　拆下散热片，露出主板全貌。相比 V 2.0 版，V 4.0 版省去了处理器的屏蔽罩。</p>
-<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_2.png"></p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_2.jpg"></p>
 <p>　　将主板翻面后可以看到芯片。V 4.0 版缩水了下方交换芯片的散热片，以及左边无线芯片的屏蔽罩，但右侧处理器的屏蔽罩更大了，“缩水联”这么良心吗？一定是暗藏玄机！</p>
-<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_3.png"></p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_3.jpg"></p>
 <hr>
 
 <h2 id="🗂-芯片部分"><a href="#🗂-芯片部分" class="headerlink" title="🗂  芯片部分"></a>🗂  芯片部分</h2><p>　　拆开处理器的屏蔽罩，果然变化不小！处理器从 IPQ 0509 更换为 IPQ 5018 。两颗处理器性能应该没有差别，IPQ 5018 没有集成内存，所以 V4.0 版单独又配备了一颗内存芯片，容量同为256MB。IPQ 0518 为普联中高端飞流系列同款处理器，再加上单独的内存芯片，成本也增加了，良心啊！</p>
-<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/CPU.png"></p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/CPU.jpg"></p>
 <p>　　两版本2.4G芯片均为处理器集成，但功放芯片更换了。V 2.0 版为 QPF 4206，V 4.0 版没有找到资料，从芯片样式判断，应该为 RichWave 的芯片，但未在官网找到型号 RTC 6231 ？有小伙伴知道吗？</p>
-<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/2.4G_fem.png"></p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/2.4G-fem.jpg"></p>
 <p>　　5G 芯片两个版本没有区别，均为QCN6102（2x2 &#x2F; 160MHz &#x2F; 2402Mbps）。</p>
-<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/5G.png"></p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/5G.jpg"></p>
 <p>　　5G 功放发生了变化，从 QPF 4506 替换为 RichWave 的 RTC 7676D，新功放功率为 20 dBm，相比 QPF 4506 的 15 dBm 提高了不少，理论上 5G 速率应该有更好的表现！</p>
-<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/5G_fem.png"></p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/5G-fem.jpg"></p>
 <p>两颗功放的参数如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">RTC 7676D</span><br><span class="line">+20 dBm @ –40 dB DEVM, HE80/160, MCS11</span><br><span class="line">+21.5 dBm    @ –35 dB DEVM, HE80/160, MCS9</span><br></pre></td></tr></table></figure>
 
