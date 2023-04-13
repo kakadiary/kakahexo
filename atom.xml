@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-13T14:40:02.840Z</updated>
+  <updated>2023-04-13T14:48:33.309Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="http://example.com/2023/04/13/xdr3010v4-disassembly/"/>
     <id>http://example.com/2023/04/13/xdr3010v4-disassembly/</id>
     <published>2023-04-13T06:12:14.000Z</published>
-    <updated>2023-04-13T14:40:02.840Z</updated>
+    <updated>2023-04-13T14:48:33.309Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.19ta.cn/xdr3010v4-disassembly/titlepage.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;　　普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.0 版则是我自费购买并拆解拍摄。一起来看看两个版本有何不同吧！&lt;/p&gt;
-&lt;hr&gt;</summary>
+&lt;p&gt;　　普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。我们从官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！官网没有硬件变化的相关说明，所以只能拆机看看了。&lt;/p&gt;
+&lt;p&gt;下面我们将对两个版本的想 XDR 3010 进行拆机对比。其中 V 2.0 版是借用站长 XDR 3010 的拆机图（&lt;a href=&quot;https://www.acwifi.net/16194.html/&quot; target=&quot;_blank&quot;&gt; 站长的拆机文章地址&lt;/a&gt;）V 4.0 版则是我自费购买并拆解拍摄。一起来看看两个版本有何不同吧！&lt;/p&gt;</summary>
     
     
     
