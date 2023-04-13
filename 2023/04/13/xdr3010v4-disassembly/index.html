@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-kaka-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-kaka-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto+Serif+SC:300,300italic,400,400italic,700,700italic%7CDroid+Serif:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":"dark","version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+<script async defer data-website-id="a28c0907-86e9-4965-a690-5555e92c944c" src="https://analyze.timochan.cn/umami.js"></script>
+    <meta name="description" content="普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="普联 XDR 3010 V2 及 V4 版拆机对比">
+<meta property="og:url" content="http://example.com/2023/04/13/xdr3010v4-disassembly/index.html">
+<meta property="og:site_name" content="卡卡的鼓捣日记">
+<meta property="og:description" content="普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.0">
+<meta property="og:locale">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.png">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_2.png">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_3.png">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/CPU.png">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/2.4G_fem.png">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/5G.png">
+<meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/5G_fem.png">
+<meta property="article:published_time" content="2023-04-13T06:12:14.000Z">
+<meta property="article:modified_time" content="2023-04-13T13:25:32.555Z">
+<meta property="article:author" content="19ta">
+<meta property="article:tag" content="路由器">
+<meta property="article:tag" content="XDR3010">
+<meta property="article:tag" content="普联">
+<meta property="article:tag" content="拆机">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.png">
+
+
+<link rel="canonical" href="http://example.com/2023/04/13/xdr3010v4-disassembly/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-Hans","comments":true,"permalink":"http://example.com/2023/04/13/xdr3010v4-disassembly/","path":"2023/04/13/xdr3010v4-disassembly/","title":"普联 XDR 3010 V2 及 V4 版拆机对比"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>普联 XDR 3010 V2 及 V4 版拆机对比 | 卡卡的鼓捣日记</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="waline.19ta.cn"><link rel="stylesheet" type="text/css" href="/css/injector/main.css" /><link rel="preload" as="style" href="/css/injector/light.css" /><link rel="preload" as="style" href="/css/injector/dark.css" />
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+
+  <script>
+  fetch('https://v1.hitokoto.cn?c=b&c=d&c=i&c=k&c=j')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('hitokoto_text')
+      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+      hitokoto.innerText = data.hitokoto
+
+      const from = document.getElementById('hitokoto_from')
+      from.href = 'https://hitokoto.cn/?uuid=' + data.uuid 
+      from.innerText = data.from
+
+      const who = document.getElementById('hitokoto_who')
+      who.href = 'https://hitokoto.cn/?uuid=' + data.uuid 
+      who.innerText = data.from_who
+    })
+    .catch(console.error)
+</script>
+<link rel="alternate" href="/atom.xml" title="卡卡的鼓捣日记" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">卡卡的鼓捣日记</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">卡卡的鼓捣日记</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">8</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">1</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">5</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-%E6%95%A3%E7%83%AD%E5%8F%8A%E5%B1%8F%E8%94%BD%E9%83%A8%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">🗂 散热及屏蔽部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-%E8%8A%AF%E7%89%87%E9%83%A8%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">🗂  芯片部分</span></a></li></ol></div>
+          <hr/>
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <!-- modify icon to fire by szw -->
+                <i class="fa fa-history fa-" aria-hidden="true"></i>
+                近期文章
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                
+                  <li>
+                    <a href="/2023/04/13/xdr3010v4-disassembly/" title="普联 XDR 3010 V2 及 V4 版拆机对比" target="_blank">普联 XDR 3010 V2 及 V4 版拆机对比</a>
+                  </li>
+                
+                  <li>
+                    <a href="/2023/04/05/mi-be10000-1077/" title="小米万兆路由器新版固件复测（固件版本1.0.77）" target="_blank">小米万兆路由器新版固件复测（固件版本1.0.77）</a>
+                  </li>
+                
+                  <li>
+                    <a href="/2022/08/20/change-findx5pro/" title="聊聊将测试机从红米K50Pro天玑版更换为OppoFindX5Pro天玑版的原因" target="_blank">聊聊将测试机从红米K50Pro天玑版更换为OppoFindX5Pro天玑版的原因</a>
+                  </li>
+                
+                  <li>
+                    <a href="/2022/08/08/tp-xdr6088-1022/" title="普联XDR6088 新固件复测（固件版本1.0.22）" target="_blank">普联XDR6088 新固件复测（固件版本1.0.22）</a>
+                  </li>
+                
+                  <li>
+                    <a href="/2022/07/27/redmi-ax6000-1-0-60/" title="红米AX6000的1.0.60版固件解决问题了吗？" target="_blank">红米AX6000的1.0.60版固件解决问题了吗？</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+        </div>
+
+        <!--/noindex-->
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="19ta"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">19ta</p>
+  <div class="site-description" itemprop="description">. 分 享 热 爱 .</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/310343153" title="bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;310343153" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.youtube.com/channel/UC5sraF8MVB-soSd56tKEHUg" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UC5sraF8MVB-soSd56tKEHUg" rel="noopener" target="_blank"><i class="fab fa-youtube fa-fw"></i>YouTube</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.ixigua.com/home/6685016123" title="头条 → https:&#x2F;&#x2F;www.ixigua.com&#x2F;home&#x2F;6685016123" rel="noopener" target="_blank"><i class="fa fa-video-camera fa-fw"></i>头条</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://jq.qq.com/?_wv=1027&k=ZTPZ7U6H" title="QQ群 → https:&#x2F;&#x2F;jq.qq.com&#x2F;?_wv&#x3D;1027&amp;k&#x3D;ZTPZ7U6H" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>QQ群</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/+4EZXK26Ss-Q0M2I1" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;+4EZXK26Ss-Q0M2I1" rel="noopener" target="_blank"><i class="fab fa-telegram fa-fw"></i>Telegram</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.miaoer.xyz/" title="https:&#x2F;&#x2F;www.miaoer.xyz" rel="noopener" target="_blank">喵二の小博客</a>
+        </li>
+    </ul>
+  </div>
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/13/xdr3010v4-disassembly/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="19ta">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="卡卡的鼓捣日记">
+      <meta itemprop="description" content=". 分 享 热 爱 .">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="普联 XDR 3010 V2 及 V4 版拆机对比 | 卡卡的鼓捣日记">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          普联 XDR 3010 V2 及 V4 版拆机对比
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-04-13 14:12:14" itemprop="dateCreated datePublished" datetime="2023-04-13T14:12:14+08:00">2023-04-13</time>
+    </span>
+
+  
+    <span id="/2023/04/13/xdr3010v4-disassembly/" class="post-meta-item leancloud_visitors" data-flag-title="普联 XDR 3010 V2 及 V4 版拆机对比" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/2023/04/13/xdr3010v4-disassembly/#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/2023/04/13/xdr3010v4-disassembly/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>　　普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.0 版则是我自费购买并拆解拍摄。一起来看看两个版本有何不同吧！</p>
+<hr>
+
+<h2 id="🗂-散热及屏蔽部分"><a href="#🗂-散热及屏蔽部分" class="headerlink" title="🗂 散热及屏蔽部分"></a>🗂 散热及屏蔽部分</h2><p>　　打开机身盖后，可以看到主板正面。相比 V 2.0 版，V 4.0 版没有散热鳍片，而是使用了一个大尺的散热金属板。</p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.png"></p>
+<p>　　拆下散热片，露出主板全貌。相比 V 2.0 版，V 4.0 版省去了处理器的屏蔽罩。</p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_2.png"></p>
+<p>　　将主板翻面后可以看到芯片。V 4.0 版缩水了下方交换芯片的散热片，以及左边无线芯片的屏蔽罩，但右侧处理器的屏蔽罩更大了，“缩水联”这么良心吗？一定是暗藏玄机！</p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_3.png"></p>
+<hr>
+
+<h2 id="🗂-芯片部分"><a href="#🗂-芯片部分" class="headerlink" title="🗂  芯片部分"></a>🗂  芯片部分</h2><p>　　拆开处理器的屏蔽罩，果然变化不小！处理器从 IPQ 0509 更换为 IPQ 5018 。两颗处理器性能应该没有差别，IPQ 5018 没有集成内存，所以 V4.0 版单独又配备了一颗内存芯片，容量同为256MB。IPQ 0518 为普联中高端飞流系列同款处理器，再加上单独的内存芯片，成本也增加了，良心啊！</p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/CPU.png"></p>
+<p>　　两版本2.4G芯片均为处理器集成，但功放芯片更换了。V 2.0 版为 QPF 4206，V 4.0 版没有找到资料，从芯片样式判断，应该为 RichWave 的芯片，但未在官网找到型号 RTC 6231 ？有小伙伴知道吗？</p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/2.4G_fem.png"></p>
+<p>　　5G 芯片两个版本没有区别，均为QCN6102（2x2 &#x2F; 160MHz &#x2F; 2402Mbps）。</p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/5G.png"></p>
+<p>　　5G 功放发生了变化，从 QPF 4506 替换为 RichWave 的 RTC 7676D，新功放功率为 20 dBm，相比 QPF 4506 的 15 dBm 提高了不少，理论上 5G 速率应该有更好的表现！</p>
+<p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/5G_fem.png"></p>
+<p>两颗功放的参数如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">RTC 7676D</span><br><span class="line">+20 dBm @ –40 dB DEVM, HE80/160, MCS11</span><br><span class="line">+21.5 dBm    @ –35 dB DEVM, HE80/160, MCS9</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">QPF 4506</span><br><span class="line">+15 dBm MCS11 HE160 -43 dB Dynamic EVM</span><br><span class="line">+21 dBm MCS9 VHT80 -35 dB Dynamic EVM</span><br></pre></td></tr></table></figure>
+
+<hr>
+
+<p>　　虽然 V 4.0 版 XDR3010 在屏蔽及散热上有所缩水，但是在硬件配置上却不降反升！普联这波操作一反常态，有些匪夷所思。个人感觉 V 4.0 版本应该的性能表现应该不差，我会尽快推出两版本 XDR 3010 的对比评测。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px; padding: 30px 0;">--------------------------------------- <i class="fa fa-heart"></i> The End <i class="fa fa-heart"></i> ---------------------------------------  </div>
+    
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://space.bilibili.com/310343153">
+          <span class="icon">
+            <i class="fab fa-bilibili"></i>
+          </span>
+
+          <span class="label">bilibili</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://www.youtube.com/channel/UC5sraF8MVB-soSd56tKEHUg">
+          <span class="icon">
+            <i class="fab fa-youtube"></i>
+          </span>
+
+          <span class="label">YouTube</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAEN-ydaOCUsyMb5VBQTJq47PbcaoQqP0nI6dhN7ZcoDQ">
+          <span class="icon">
+            <i class="fa fa-video-camera"></i>
+          </span>
+
+          <span class="label">头条</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/" rel="tag"># 路由器</a>
+              <a href="/tags/XDR3010/" rel="tag"># XDR3010</a>
+              <a href="/tags/%E6%99%AE%E8%81%94/" rel="tag"># 普联</a>
+              <a href="/tags/%E6%8B%86%E6%9C%BA/" rel="tag"># 拆机</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/04/05/mi-be10000-1077/" rel="prev" title="小米万兆路由器新版固件复测（固件版本1.0.77）">
+                  <i class="fa fa-chevron-left"></i> 小米万兆路由器新版固件复测（固件版本1.0.77）
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">京ICP备2022022921号-1 </a>
+  </div>
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">卡卡的鼓捣日记</span>
+</div>
+  <div class="powered-by">
+    Powered by Hexo & NexT 
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"3JbhTssx826YMbS1Sy6RQYd7-gzGzoHsz","app_key":"IkqzSMDzggAFvIGI2Upa7FLF","server_url":"https://leancloud.19ta.cn","security":false}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline.19ta.cn","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"dark":"auto","avatar":"mm","meta":["nick","mail"],"pageSize":6,"visitor":false,"requiredMeta":["nick"],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","locale":{"placeholder":"有话和我说？"},"copyright":false,"el":"#waline","comment":true,"path":"/2023/04/13/xdr3010v4-disassembly/"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+<div class="moon-menu">
+  <div class="moon-menu-items">
+    
+    <div id="moon-menu-item-back2bottom" class="moon-menu-item" onclick="back2bottom()">
+      <i class='fa fa-chevron-down'></i>    </div>
+    
+    <div id="moon-menu-item-back2top" class="moon-menu-item" onclick="back2top()">
+      <i class='fa fa-chevron-up'></i>    </div>
+    
+  </div>
+  <div class="moon-menu-button">
+    <svg class="moon-menu-bg">
+      <circle class="moon-menu-cricle" cx="50%" cy="50%" r="44%"></circle>
+      <circle class="moon-menu-border" cx="50%" cy="50%" r="48%"></circle>
+    </svg>
+    <div class="moon-menu-content">
+      <div class="moon-menu-icon"><i class='fas fa-ellipsis-v'></i></div>
+      <div class="moon-menu-text"></div>
+    </div>
+  </div>
+</div><script src="/js/injector.js"></script>
+</body>
+</html>

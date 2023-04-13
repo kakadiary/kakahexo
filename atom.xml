@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-06T03:10:49.894Z</updated>
+  <updated>2023-04-13T13:25:32.555Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>普联 XDR 3010 V2 及 V4 版拆机对比</title>
+    <link href="http://example.com/2023/04/13/xdr3010v4-disassembly/"/>
+    <id>http://example.com/2023/04/13/xdr3010v4-disassembly/</id>
+    <published>2023-04-13T06:12:14.000Z</published>
+    <updated>2023-04-13T13:25:32.555Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;　　普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。从普联官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！不过从官网介绍中，没有硬件变化的相关说明，所以只能拆机看看了。其中 V 2.0 版是借用站长 XDR 3010 的拆机图，V 4.0 版则是我自费购买并拆解拍摄。一起来看看两个版本有何不同吧！&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2 id=&quot;🗂-散热及屏蔽部分&quot;&gt;&lt;a href=&quot;#🗂-散热及屏蔽部分&quot; class=&quot;headerlink&quot; title=&quot;🗂 散热及屏蔽部分&quot;&gt;&lt;/a&gt;🗂 散热及屏蔽部分&lt;/h2&gt;</summary>
+    
+    
+    
+    
+    <category term="路由器" scheme="http://example.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    
+    <category term="XDR3010" scheme="http://example.com/tags/XDR3010/"/>
+    
+    <category term="普联" scheme="http://example.com/tags/%E6%99%AE%E8%81%94/"/>
+    
+    <category term="拆机" scheme="http://example.com/tags/%E6%8B%86%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>小米万兆路由器新版固件复测（固件版本1.0.77）</title>
