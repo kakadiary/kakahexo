@@ -24,10 +24,16 @@
     <updated>2023-04-14T02:46:24.587Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.19ta.cn/xdr3010v4-disassembly/titlepage.jpg&quot;&gt;&lt;/p&gt;
 &lt;br&gt;
 
-&lt;p&gt;　　普联 XDR3010 目前的市售版本为 V 4.0，按照版本号推测应该至少有四个版本，不过市面上似乎只有能找到 V 2.0 和 V 4.0 两个版本。我们从官网可以分别找到两个版本的固件，同一型号不同硬件版本分别开发固件的情况并不多见，大概率是硬件配置发生了变化！官网没有硬件变化的相关说明，所以只能拆机看看了。&lt;/p&gt;</summary>
+&lt;p&gt;　　普联 XDR3010 目前的市售版本为 V</summary>
+        
+      
     
     
     
@@ -50,11 +56,17 @@
     <updated>2023-04-06T03:10:49.894Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.19ta.cn/mi-be10000-1077/titlepage720p.jpg&quot;&gt;&lt;/p&gt;
 &lt;br&gt;
 
 
-&lt;p&gt;　　由于小米官方宣称即将发布适配 WiFi 7的固件， 所以在 &lt;a href=&quot;https://www.bilibili.com/video/BV1xD4y1g7X5/&quot; target=&quot;_blank&quot;&gt; 《欠火候！小米万兆路由深度评测》&lt;/a&gt;中 ，我暂未对其无线性能进行测试。即便如此，在处理器和有线网口测试环节还是出现了&lt;b style=&quot;color:#F6358A&quot;&gt;处理器转发性能偏低，万兆网口与多个2.5G 网口传输数据掉速的问题。&lt;/b&gt;&lt;/p&gt;</summary>
+&lt;p&gt;　　由于小米官方宣称即将发布适配 WiFi 7的固件， 所以在 &lt;a</summary>
+        
+      
     
     
     
@@ -95,8 +107,14 @@
     <updated>2022-08-26T01:14:47.931Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.19ta.cn/tp_xdr6088_1022/titlepage720p.jpg&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;1-0-15-版固件的问题&quot;&gt;&lt;a href=&quot;#1-0-15-版固件的问题&quot; class=&quot;headerlink&quot; title=&quot;1.0.15 版固件的问题&quot;&gt;&lt;/a&gt;1.0.15 版固件的问题&lt;/h2&gt;&lt;p&gt;我们在&lt;a href=&quot;https://www.bilibili.com/video/BV1uv4y1u7jZ/&quot; target=&quot;_blank&quot;&gt; &lt;em&gt;《最便宜的双 2.5G + USB3.0 普联 XDR6088 详尽对比评测》&lt;/em&gt;&lt;/a&gt; 视频中，使用的 1.0.15 版固件进行测试。测试结果与使用同平台同芯片的红米 AX6000 类似，&lt;b style=&quot;color:#F6358A&quot;&gt;在与 iPhone 配合时，都出现了无线速率表现较差的情况。&lt;/b&gt;除此之外，&lt;b style=&quot;color:#F6358A&quot;&gt;XDR6088 和采用麒麟无线芯片的华为 P40 Pro 配合使用时，远距离测试结果拉胯！&lt;/b&gt;我们一起来看看 1.0.22 版固件是否解决了这些问题。&lt;/p&gt;</summary>
+&lt;h2 id=&quot;1-0-15-版固件的问题&quot;&gt;&lt;a href=&quot;#1-0-15-版固件的问题&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
@@ -117,8 +135,14 @@
     <updated>2023-04-05T13:45:09.220Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.19ta.cn/redmi-ax6000-1.0.60/titlepage720p.jpg&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;1-0-48-版固件的问题&quot;&gt;&lt;a href=&quot;#1-0-48-版固件的问题&quot; class=&quot;headerlink&quot; title=&quot;1.0.48 版固件的问题&quot;&gt;&lt;/a&gt;1.0.48 版固件的问题&lt;/h2&gt;&lt;p&gt;在&lt;a href=&quot;https://www.bilibili.com/video/BV1wv4y1w74C/&quot; target=&quot;_blank&quot;&gt; &lt;em&gt;《别急着入手！红米 AX6000 详尽对比评测》&lt;/em&gt;&lt;/a&gt; 的评测视频中，使用 1.0.48 版固件的红米 AX6000 与 iPhone 配合测试时，&lt;b style=&quot;color:#F6358A&quot;&gt;出现无线速率表现较差、无缝漫游掉线的情况，与高通平台的小米 11 配合测试时，平均延时较高。&lt;/b&gt;新版固件解决了这些问题吗？😰😰😰&lt;/p&gt;</summary>
+&lt;h2 id=&quot;1-0-48-版固件的问题&quot;&gt;&lt;a href=&quot;#1-0-48-版固件的问题&quot;</summary>
+        
+      
     
     
     
