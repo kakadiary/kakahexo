@@ -39,7 +39,7 @@
 <meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/5G-fem.jpg">
 <meta property="og:image" content="https://cdn.19ta.cn/xdr3010v4-disassembly/allchange.jpg">
 <meta property="article:published_time" content="2023-04-13T06:12:14.000Z">
-<meta property="article:modified_time" content="2023-04-14T02:46:24.587Z">
+<meta property="article:modified_time" content="2023-04-14T08:12:36.651Z">
 <meta property="article:author" content="19ta">
 <meta property="article:tag" content="路由器">
 <meta property="article:tag" content="XDR3010">
@@ -152,7 +152,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-%E6%95%A3%E7%83%AD%E5%8F%8A%E5%B1%8F%E8%94%BD%E9%83%A8%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">🗂 散热及屏蔽部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-%E8%8A%AF%E7%89%87%E9%83%A8%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">🗂  芯片部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%97%82-%E8%8A%AF%E7%89%87%E6%80%BB%E8%A7%88"><span class="nav-number">3.</span> <span class="nav-text">🗂 芯片总览</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%94%B0-%E6%95%A3%E7%83%AD%E5%8F%8A%E5%B1%8F%E8%94%BD%E9%83%A8%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">🔰 散热及屏蔽部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%94%B0-%E8%8A%AF%E7%89%87%E9%83%A8%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">🔰 芯片部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%94%B0-%E8%8A%AF%E7%89%87%E6%80%BB%E8%A7%88"><span class="nav-number">3.</span> <span class="nav-text">🔰 芯片总览</span></a></li></ol></div>
           <hr/>
           
             <div class="links-of-blogroll motion-element links-of-blogroll-block">
@@ -355,7 +355,7 @@
 <p>　　下面我将对两个版本的 XDR 3010 进行拆机对比。其中 V 2.0 版是借用站长 XDR 3010 的拆机图（<a href="https://www.acwifi.net/16194.html/" target="_blank"> 站长的拆机文章地址</a>）V 4.0 版则是我自费购买并拆解拍摄。一起来看看两个版本有何不同吧！</p>
 <hr>
 
-<h2 id="🗂-散热及屏蔽部分"><a href="#🗂-散热及屏蔽部分" class="headerlink" title="🗂 散热及屏蔽部分"></a>🗂 散热及屏蔽部分</h2><p>　　打开机身盖后，可以看到主板正面。<b style="color:	#3EA99F">相比 V 2.0 版，V 4.0 版没有散热鳍片，而是使用了一个大尺的散热金属板。</b></p>
+<h2 id="🔰-散热及屏蔽部分"><a href="#🔰-散热及屏蔽部分" class="headerlink" title="🔰 散热及屏蔽部分"></a>🔰 散热及屏蔽部分</h2><p>　　打开机身盖后，可以看到主板正面。<b style="color:	#3EA99F">相比 V 2.0 版，V 4.0 版没有散热鳍片，而是使用了一个大尺的散热金属板。</b></p>
 <p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_1.jpg"></p>
 <p>　　拆下散热片，露出主板全貌。<b style="color:	#3EA99F">相比 V 2.0 版，V 4.0 版省去了处理器的屏蔽罩。</b></p>
 <p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_2.jpg"></p>
@@ -363,7 +363,7 @@
 <p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/mainboard_3.jpg"></p>
 <hr>
 
-<h2 id="🗂-芯片部分"><a href="#🗂-芯片部分" class="headerlink" title="🗂  芯片部分"></a>🗂  芯片部分</h2><p>　　拆开处理器的屏蔽罩，果然变化不小！<b style="color:#F6358A">处理器从 IPQ 0509 更换为 IPQ 0518 </b>。IPQ 0518 为飞流系列同款处理器，定位比 IPQ0509 要高一些。但两颗处理器在性能上没有差别，CPU 均为双核 1 GHz，NPU 为单核 1 GHz。主要区别为IPQ 0509 集成 256 MB 内存，不支持扩展内存。 IPQ 0518 没有集成内存，支持更大内存，但对 3010 来说意义不大，<b style="color:#F6358A">毕竟 V 4.0 版也只配备了一颗 ESMT 的 256 MB 的内存芯片。</b><b style="color:#F6358A">不过 IPQ 0518 加上单独的内存芯片，成本应该增加了，勉强算是一个小小的升级吧！</b>大概率也是原因处理器更换的原因，导致 V 2.0 和 V 4.0 版固件并不通用。</p>
+<h2 id="🔰-芯片部分"><a href="#🔰-芯片部分" class="headerlink" title="🔰 芯片部分"></a>🔰 芯片部分</h2><p>　　拆开处理器的屏蔽罩，果然变化不小！<b style="color:#F6358A">处理器从 IPQ 0509 更换为 IPQ 0518 </b>。IPQ 0518 为飞流系列同款处理器，定位比 IPQ0509 要高一些。但两颗处理器在性能上没有差别，CPU 均为双核 1 GHz，NPU 为单核 1 GHz。主要区别为IPQ 0509 集成 256 MB 内存，不支持扩展内存。 IPQ 0518 没有集成内存，支持更大内存，但对 3010 来说意义不大，<b style="color:#F6358A">毕竟 V 4.0 版也只配备了一颗 ESMT 的 256 MB 的内存芯片。</b><b style="color:#F6358A">不过 IPQ 0518 加上单独的内存芯片，成本应该增加了，勉强算是一个小小的升级吧！</b>大概率也是原因处理器更换的原因，导致 V 2.0 和 V 4.0 版固件并不通用。</p>
 <p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/CPU.jpg"></p>
 <p>　　两版本2.4G芯片均为处理器集成，但功放芯片更换了。<b style="color:#F6358A">V 2.0 版为 QPF 4206，V 4.0 版功放丝印着 “ 522-6231-1251 “ ，看起来像是RichWave 的芯片，但未在官网找到对应的型号 （RTC 6231 ？），有小伙伴知道吗？</b></p>
 <p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/2.4G-fem.jpg"></p>
@@ -380,7 +380,7 @@
 
 
 
-<h2 id="🗂-芯片总览"><a href="#🗂-芯片总览" class="headerlink" title="🗂 芯片总览"></a>🗂 芯片总览</h2><p>　　最后再来总结下 V 4.0 版本在芯片上的变化，紫色为变更的芯片，蓝色为两版本一致的芯片。</p>
+<h2 id="🔰-芯片总览"><a href="#🔰-芯片总览" class="headerlink" title="🔰 芯片总览"></a>🔰 芯片总览</h2><p>　　最后再来总结下 V 4.0 版本在芯片上的变化，紫色为变更的芯片，蓝色为两版本一致的芯片。</p>
 <p><img src="https://cdn.19ta.cn/xdr3010v4-disassembly/allchange.jpg"></p>
 <hr>
 
